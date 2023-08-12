@@ -4,3 +4,23 @@
   background: #000;
   margin: 6px 0;
 }
+
+.animated-menu-icon {
+  cursor: pointer;
+}
+.animated-menu-icon .menu-line {
+  transition: all 300ms ease;
+}
+.animated-menu-icon .forward-slash {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.animated-menu-icon .backward-slash {
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.hidden {
+  display: none;
+}
