@@ -3,16 +3,12 @@ body {
   padding: 0;
 }
 .icon-bar {
-  width: 100%;
   background: #555;
   overflow: auto;
 }
 
 .icon-bar a {
-  float: left;
-  width: 20%;
   text-align: center;
-  padding: 12px 0;
   transition: all 300ms ease;
   color: white;
   font-size: 36px;
@@ -24,4 +20,23 @@ body {
 
 .icon-bar .active {
   background: #04aa6d;
+}
+
+.horizontal-icon-bar {
+  width: 100%;
+}
+.horizontal-icon-bar a {
+  float: left;
+  padding: 12px 0;
+  width: 20%;
+}
+
+.vertical-icon-bar {
+  width: 90px;
+  margin-top: 10px;
+}
+
+.vertical-icon-bar a {
+  display: block;
+  padding: 16px;
 }

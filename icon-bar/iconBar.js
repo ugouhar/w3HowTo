@@ -26,12 +26,14 @@ const addAndRemoveClass = (icons, index) => {
   }
 };
 
-const attachEventListener = () => {
-  let iconBar = document.querySelector(".icon-bar");
+const attachEventListener = (elements) => {
+  let iconBar = document.querySelector(`.${elements}`);
+  console.log(iconBar);
   let icons = iconBar.querySelectorAll("a");
   icons.forEach((icon, index) => {
     icon.addEventListener("click", () => addAndRemoveClass(icons, index));
   });
 };
 
-attachEventListener();
+attachEventListener("horizontal-icon-bar");
+attachEventListener("vertical-icon-bar");
