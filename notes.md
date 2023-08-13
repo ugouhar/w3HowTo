@@ -9,7 +9,7 @@
 - Wrap **i** in **a** and add style to **a**
 - To arrange icons from left to right use `float:left`
 - To arrange icons from right to left use `float:right`
-- To add transition between icons, add it in the parent, here **a** and in the parent of parent.
+- To add transition between icons, add it in the parent, here **a** and not in the parent of parent.
 - To make it like navbar stretched horizontally, add 100% width to the container and 100/numberOfChilds width to each child.
 
 ## Vertical Icon Bar
@@ -26,5 +26,5 @@
 
 # MENU BAR
 
-- Add `translate` to change the position of element while rotating such that it is rotated from the end.
+- Add `translate` to change the position of element while rotating such that it looks like it is rotated from the end.
 - To toggle class name use `elem.classList.toggle('class_name')` syntax
