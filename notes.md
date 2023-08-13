@@ -1,5 +1,7 @@
 # Learnings
 
+# ICONS BAR
+
 ## Horizontal Icon Bar
 
 - Add margin and padding to 0 for the body
@@ -21,3 +23,8 @@
 | ----------- | ------------- |
 | float: left | display:block |
 | width: 100% | width: 90px   |
+
+# MENU BAR
+
+- Add `translate` to change the position of element while rotating such that it is rotated from the end.
+- To toggle class name use `elem.classList.toggle('class_name')` syntax
