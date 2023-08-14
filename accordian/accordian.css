@@ -1,0 +1,28 @@
+.accordian {
+  width: 500px;
+}
+.heading {
+  cursor: pointer;
+  background: silver;
+  transition: all 300ms ease;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.heading:hover {
+  background: grey;
+}
+.content {
+  transition: all 300ms ease;
+  padding: 10px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.expanded {
+  background: grey;
+}
+.hidden {
+  height: 0px;
+  padding: 0 10px;
+}
