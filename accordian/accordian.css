@@ -14,15 +14,13 @@
 }
 .content {
   transition: all 300ms ease;
-  padding: 10px;
-  height: 100px;
+  max-height: 0;
   overflow: hidden;
 }
 
 .expanded {
   background: grey;
 }
-.hidden {
-  height: 0px;
-  padding: 0 10px;
+.show {
+  max-height: 200px;
 }

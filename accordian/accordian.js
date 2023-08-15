@@ -10,6 +10,6 @@ sections.forEach((section) => {
     expandButton.innerText = text == "+" ? "-" : "+";
 
     let content = section.querySelector(".content");
-    content.classList.toggle("hidden");
+    content.classList.toggle("show");
   });
 });
