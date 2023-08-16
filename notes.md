@@ -34,3 +34,4 @@
 - To hide content when height is set to 0, use `overflow:hidden`
 - To animate height, such that content take as much height as required when expaned, `height:auto` **won't work.**
 - To do so animate `max-height`, set `max-height` a large number and it will take maximum only that height and automatically resizes to the height if contents are less.
+- To add content before or after using css like '+' or '-' symbols, use `::before `, `::after` properties

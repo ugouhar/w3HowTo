@@ -18,9 +18,17 @@
   overflow: hidden;
 }
 
+.collapsed::after {
+  content: "\002B";
+}
+
 .expanded {
   background: grey;
 }
+.expanded::after {
+  content: "\2212";
+}
+
 .show {
   max-height: 200px;
 }
