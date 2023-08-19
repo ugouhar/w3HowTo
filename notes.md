@@ -35,3 +35,29 @@
 - To animate height, such that content take as much height as required when expaned, `height:auto` **won't work.**
 - To do so animate `max-height`, set `max-height` a large number and it will take maximum only that height and automatically resizes to the height if contents are less.
 - To add content before or after using css like '+' or '-' symbols, use `::before `, `::after` properties
+
+# TABS
+
+## Horizontal Tabs
+
+- To add tabs in a tab container, you can use `button` instead of `div`.
+- To make the tab container height, same as that of tabs, use `overflow:hidden` in tab. This will not only increase the height but also moves the next `div` to the next line.
+- To make the tab background same as tab container, use `background: inherit` in tab instead of setting same background in both. This also helps in changing background color at only one place.
+- To apply fading effect, use `animation`.
+
+  ```
+  .content {
+    animation: fadeEffect 1s;
+  }
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  ```
+
+- To position close button at topright of current container, use `float: right` on that button instead of `position` property.
+- To select parent element use `.parentElement` like `document.getElementById('main-tab').parentElement`.
