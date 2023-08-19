@@ -13,3 +13,9 @@ function switchTab(index) {
 tabs.forEach((tab, index) =>
   tab.addEventListener("click", () => switchTab(index))
 );
+
+document.querySelectorAll(".close").forEach((closeBtn) =>
+  closeBtn.addEventListener("click", function () {
+    this.parentElement.classList.add("hidden");
+  })
+);

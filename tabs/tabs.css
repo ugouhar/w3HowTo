@@ -44,3 +44,9 @@
 .content.visible {
   display: block;
 }
+
+.close {
+  float: right;
+  font-size: 25px;
+  cursor: pointer;
+}
