@@ -1,0 +1,38 @@
+.header {
+  border: 1px solid silver;
+  background: rgb(220, 220, 220);
+}
+.tab {
+  background: rgb(220, 220, 220);
+  padding: 10px;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+  float: left;
+}
+
+.tab3 {
+  float: none;
+  display: inline-block;
+}
+.tab:hover {
+  background: rgb(190, 190, 190);
+  transition: 200ms ease;
+}
+
+.active {
+  background: rgb(180, 180, 180);
+  opacity: 1;
+  transition: 200ms ease;
+}
+
+.hidden {
+  display: none;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.content {
+  border: 1px solid silver;
+  padding: 10px;
+}
