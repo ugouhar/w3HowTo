@@ -1,38 +1,37 @@
-.header {
-  border: 1px solid silver;
-  background: rgb(220, 220, 220);
+.tabs-container {
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  overflow: hidden;
 }
 .tab {
-  background: rgb(220, 220, 220);
-  padding: 10px;
+  background: inherit;
+  padding: 14px 16px;
   cursor: pointer;
-  width: 10%;
-  text-align: center;
   float: left;
+  border: none;
+  outline: none;
+  transition: 300ms ease;
+  font-size: 17px;
 }
 
-.tab3 {
-  float: none;
-  display: inline-block;
-}
 .tab:hover {
-  background: rgb(190, 190, 190);
-  transition: 200ms ease;
+  background: #ddd;
 }
 
-.active {
-  background: rgb(180, 180, 180);
+.tab.active {
+  background: #ccc;
   opacity: 1;
   transition: 200ms ease;
 }
 
-.hidden {
-  display: none;
-  transition: all 1s ease;
-  opacity: 0;
+.content {
+  border: 1px solid #ccc;
+  padding: 6px 12px;
 }
 
-.content {
-  border: 1px solid silver;
-  padding: 10px;
+.content.hidden {
+  display: none;
+}
+.content.visible {
+  display: block;
 }
