@@ -57,20 +57,27 @@
   background: #f1f1f1;
   width: max-content;
   height: 300px;
+  float: left;
+  width: 30%;
 }
 
 .tablinks {
   background: inherit;
-  width: 200px;
   padding: 20px 14px;
   cursor: pointer;
-  float: left;
   border: none;
   outline: none;
   transition: 300ms ease;
   font-size: 17px;
   text-align: left;
+  display: block;
+  width: 100%;
 }
 .tablinks:hover {
   background: #ddd;
+}
+
+.contents {
+  height: 300px;
+  border: 1px solid #ccc;
 }

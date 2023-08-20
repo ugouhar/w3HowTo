@@ -61,3 +61,9 @@
 
 - To position close button at topright of current container, use `float: right` on that button instead of `position` property.
 - To select parent element use `.parentElement` like `document.getElementById('main-tab').parentElement`.
+
+## Vertical Tabs
+
+- For vertically aligning the tabs instead of adding `<br/>`after the tab, use `display: block` in tab.
+- To horizontally place two divs, here **tab** and **content**, use `float:left` in the parent div
+- For width we can use `%` but for height we have to set fix values like `px`.
