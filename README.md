@@ -9,3 +9,7 @@
 # Menu Icon
 
 <kbd><img src="./icon-bar/menuIcon.png"  width="400"/></kbd>
+
+# Tabs
+
+<kbd><img src="./icon-bar/tabs.png"  width="400"/></kbd>
