@@ -50,3 +50,27 @@
   font-size: 25px;
   cursor: pointer;
 }
+
+/*  ========= VERTICAL TABS =============== */
+.tabs {
+  border: 1px solid #ccc;
+  background: #f1f1f1;
+  width: max-content;
+  height: 300px;
+}
+
+.tablinks {
+  background: inherit;
+  width: 200px;
+  padding: 20px 14px;
+  cursor: pointer;
+  float: left;
+  border: none;
+  outline: none;
+  transition: 300ms ease;
+  font-size: 17px;
+  text-align: left;
+}
+.tablinks:hover {
+  background: #ddd;
+}
