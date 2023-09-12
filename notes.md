@@ -67,3 +67,8 @@
 - For vertically aligning the tabs instead of adding `<br/>`after the tab, use `display: block` in tab.
 - To horizontally place two divs, here **tab** and **content**, use `float:left` in the parent div
 - For width we can use `%` but for height we have to set fix values like `px`.
+
+## Search/Filter Menu
+
+- To check whether a string is a subtring of another you can use `myString.substring(query)` or `myString.indexOf(query) > -1`.
+- To resize individual flex items width, use properties like this `flex: 35%` in individual flex items. Make sure to add percentage values in all the flex items to have the desired look. It will not automatically adjust.
