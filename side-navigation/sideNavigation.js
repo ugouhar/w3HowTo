@@ -3,7 +3,7 @@ const sideNav = document.querySelector(".sidenav");
 const closeBtn = document.querySelector(".close-btn");
 
 const toggleSideNav = () => {
-  sideNav.classList.toggle("animate");
+  sideNav.classList.toggle("show");
 };
 
 menuIcon.addEventListener("click", toggleSideNav);

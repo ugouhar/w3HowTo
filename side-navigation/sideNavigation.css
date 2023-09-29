@@ -13,21 +13,21 @@ body {
   height: 100vh;
   color: #aaa;
   font-size: 1.5rem;
-  width: 250px;
-  transition: 300ms all ease-out;
-  overflow-x: hidden;
-}
-.animate {
+  transition: 300ms ease-out;
   overflow-x: hidden;
   width: 0px;
-  transition: 300ms all ease-out;
+}
+.show {
+  overflow-x: hidden;
+  width: 250px;
+  background-color: darkgreen;
 }
 
 .sidenav .close-btn {
   cursor: pointer;
   position: absolute;
   top: 10px;
-  right: 15%;
+  right: 25px;
   font-size: 2rem;
 }
 
@@ -61,4 +61,13 @@ body {
   height: 3px;
   background-color: black;
   margin-top: 5px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav__item {
+    font-size: 1rem;
+  }
 }

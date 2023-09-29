@@ -83,3 +83,11 @@
 - To make an element shift (here main content) towards right use margin instead of padding. As margin will actually move the element from left, while padding will shift the content towards left but the overall size of container will become bigger.
 - By adding font-size in `p` only, we were increasing the font of `p` texts only, but by adding font-size in `main` we are also increasing the font-size of `h1` as `h1` has default font-size of 2em which means it will be 2 times the font-size of parent.
 - Add a media query for change in height. Decrease in height will decrease the padding and font-size of side nav.
+
+# Side Navigation
+
+## Animated
+
+- `transition: 300ms ease-out` is enough for transition.
+- Use same unit for `top`, `right` etc and not like `top` in px and `right` in %.
+- To add animation add `transition` property in the element only. What properties to animate will be added in a separate class which you can toggle through JS.
