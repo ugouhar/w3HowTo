@@ -5,49 +5,45 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  display: flex;
-}
-
-.left-side-bar {
+.sidenav {
   background-color: black;
   position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   height: 100vh;
+  width: 160px;
+  padding-top: 20px;
 }
 
-.left-side-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-top: 1rem;
-}
-
-.left-side-bar li {
-  margin: 0.8rem;
-  width: 120px;
-}
-.left-side-bar ul a {
+.sidenav a {
+  padding: 1rem 0.5rem;
+  padding-top: 0.5rem;
   text-decoration: none;
   font-size: 1.5rem;
   color: #aaa;
+  display: block;
 }
-.left-side-bar ul a:hover {
+.sidenav a:hover {
   color: #eee;
 }
 
 .main {
   display: block;
-  padding: 1rem;
-  padding-top: 0;
-  padding-left: 150px;
+  padding: 0 1rem;
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 1.2rem;
 }
 
 .main h1 {
   margin: 0;
 }
 
-.main p {
-  font-size: 1.2rem;
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 1rem;
+  }
+  .sidenav a {
+    font-size: 1.1rem;
+  }
 }
