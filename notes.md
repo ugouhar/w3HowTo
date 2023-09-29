@@ -72,3 +72,14 @@
 
 - To check whether a string is a subtring of another you can use `myString.substring(query)` or `myString.indexOf(query) > -1`.
 - To resize individual flex items width, use properties like this `flex: 35%` in individual flex items. Make sure to add percentage values in all the flex items to have the desired look. It will not automatically adjust.
+
+# Fixed Sidebar
+
+- `sidenav` is better classname than `left-side-bar`.
+- It's not always necessary to use list for navigation. Instead you can directly use anchor tags for each element.
+- While making element fixed, also add z-index to it
+- To have larger container for a links use padding instead of margin and also this makes sense in case box-sizing as border box i.e, by adding padding actually makes the overall element bigger.
+- In this case we don't need flex container as side nav is fixed and main content will be at the same level vertically w.r.t sidenav.
+- To make an element shift (here main content) towards right use margin instead of padding. As margin will actually move the element from left, while padding will shift the content towards left but the overall size of container will become bigger.
+- By adding font-size in `p` only, we were increasing the font of `p` texts only, but by adding font-size in `main` we are also increasing the font-size of `h1` as `h1` has default font-size of 2em which means it will be 2 times the font-size of parent.
+- Add a media query for change in height. Decrease in height will decrease the padding and font-size of side nav.
