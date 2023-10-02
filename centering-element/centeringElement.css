@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+}
+.parent {
+  background-color: violet;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.child {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
