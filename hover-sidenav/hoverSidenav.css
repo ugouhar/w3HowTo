@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: hidden;
+  padding-left: 0;
+  position: fixed;
+}
+
+.sidenav a {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0.2rem 0;
+  position: relative;
+  left: -70px;
+  width: 100px;
+  transition: 0.3s;
+}
+.sidenav a:nth-child(1) {
+  background-color: red;
+}
+.sidenav a:nth-child(2) {
+  background-color: green;
+}
+.sidenav a:nth-child(3) {
+  background-color: blue;
+}
+.sidenav a:nth-child(4) {
+  background-color: orange;
+}
+
+.sidenav a:hover {
+  transition: 0.3s;
+  left: 0;
+}
+
+.content {
+  margin-left: 80px;
+}
