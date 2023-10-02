@@ -91,3 +91,7 @@
 - `transition: 300ms ease-out` is enough for transition.
 - Use same unit for `top`, `right` etc and not like `top` in px and `right` in %.
 - To add animation add `transition` property in the element only. What properties to animate will be added in a separate class which you can toggle through JS.
+
+# Short Notes
+
+- To shift an element towards right because previous element has position fixed/absolute, use `margin-left`. Using `position:relative` and `left` will shift the content towards left but horizontal scrollbar will be added. Using `margin-left` will shift as well as decrease the width.
